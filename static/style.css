@@ -1,0 +1,20 @@
+body {
+    background: lightseagreen;
+    color: aquamarine;
+    font-family: fantasy;
+}
+
+h1 {
+    color:coral;
+    font-style:italic;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 0px white;
+}
+
+p{
+    background: blue;
+    font-weight: bold;
+    padding: 10px;
+    border:2px solid black; 
+}

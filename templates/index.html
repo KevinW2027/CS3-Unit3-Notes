@@ -3,11 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
-    <hl>My first flask</hl>
-    <p>blahblahblah ima paragraph</p>
+    <h1>My first flask</h1>
+    {% if name %}
+    <p>Hello! {{ name }}!</p>
+    {% else %}
+    <p>Hello, visitor!</p>
+    {% endif %}
 
 </body>
 
