@@ -14,6 +14,23 @@
     <p>Hello, visitor!</p>
     {% endif %}
 
+    {% if year == 2026 %}
+    <p>OMG you'll graduate soon!</p>
+    {% endif %}
+
+    <hr>
+    <ul>
+    {% for item in favorites %}
+    <li> {{item}} </li>
+    {% endfor %}
+    </ul>
+    <dl>
+        {% for key, val in rating.items() %}
+            <dt>{{key}}</dt>
+            <dd>{{val}}</dd>
+        {% end for %}
+    </dl>
+
 </body>
 
 </html>
