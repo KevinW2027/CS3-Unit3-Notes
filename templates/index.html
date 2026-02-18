@@ -7,6 +7,15 @@
 </head>
 
 <body>
+    <div class="navbar"> 
+        <a href="{{ url_for('index') }}" class="navbar-brand"> Home </a>        
+        <a href="#" class="navbar-items"> About </a>
+        <a href="#" class="navbar-items"> Contact </a>
+    </div>
+
+    <div class="page-content"> 
+
+    
     <h1>My first flask</h1>
     {% if name %}
     <p>Hello! {{ name }}!</p>
@@ -25,12 +34,16 @@
     {% endfor %}
     </ul>
     <dl>
-        {% for key, val in rating.items() %}
+        {% for key, val in ratings.items() %}
             <dt>{{key}}</dt>
             <dd>{{val}}</dd>
-        {% end for %}
+        {% endfor %}
     </dl>
 
+    </div>
+    <footer>
+        <span> Coded by Kevin &copy; 2026</span>
+    </footer>
 </body>
 
 </html>

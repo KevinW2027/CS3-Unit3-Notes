@@ -1,11 +1,18 @@
+:root {
+    --accent: #00ffb7;
+    --accent-lt: #88fbde;
+    --accent_dk: #016b36;
+
+}
+
 body {
-    background: seagreen;
-    color: black;
+    background: var(--accent-lt);
+    color: var(--accent-dk);
     font-family: fantasy;
 }
 
 h1 {
-    color:coral;
+    color: var(--accent);
     font-style:italic;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -17,4 +24,11 @@ p{
     font-weight: bold;
     padding: 10px;
     border:2px solid black; 
+}
+
+footer{
+    background: var(--accent-dk);
+    color:white;
+    text-align: center;
+    font-size: 0.8rpm;
 }
